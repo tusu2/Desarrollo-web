@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de PHP con resaltado de sintaxis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+
+        pre {
+            background-color: #282c34;
+            color: #f8f8f2;
+            border-radius: 5px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        .keyword {
+            color: #c678dd;
+            font-weight: bold;
+        }
+
+        .string {
+            color: #98c379;
+        }
+
+        .comment {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .function {
+            color: #61afef;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Código PHP</h1>
+    
+    <pre>
+<span class="comment">// Este es un comentario en PHP</span>
+<span class="keyword"><?php</span>
+
+<span class="comment">// Definir una variable</span>
+<span class="keyword">$nombre</span> = <span class="string">'Juan'</span>;
+
+<span class="comment">// Crear una función simple</span>
+<span class="keyword">function</span> <span class="function">saludar</span>(<span class="keyword">$nombre</span>) {
+    <span class="keyword">echo</span> <span class="string">"Hola, "</span> . <span class="keyword">$nombre</span>;
+}
+
+<span class="comment">// Llamar a la función</span>
+<span class="function">saludar</span>(<span class="keyword">$nombre</span>);
+
+<span class="keyword">?></span>
+    </pre>
+
+</body>
+</html>

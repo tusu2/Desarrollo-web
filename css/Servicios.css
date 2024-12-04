@@ -1,0 +1,32 @@
+.animate-on-load {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Efecto de rebote */
+}
+
+/* Animación con rebote al cargar la página */
+.animate-on-load.loaded {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.animate-card {
+    opacity: 0;
+    transform: scale(1.5) rotate(2deg);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* Estilo cuando la tarjeta esté visible */
+.animate-card.visible {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+/* Animación para la imagen */
+.animate-card img {
+    transition: transform 0.3s ease;
+}
+
+.animate-card.visible img {
+    transform: scale(1.1);
+}

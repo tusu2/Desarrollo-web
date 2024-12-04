@@ -1,0 +1,19 @@
+<svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 500 150" 
+    preserveAspectRatio="none" 
+    style="position: absolute; bottom: 0; width: 1000%; height: 50%;">
+    <path 
+      d="M0,50 C150,100 350,0 500,50 L500,150 L0,150 Z" 
+      fill="lightblue">
+      <animate 
+        attributeName="d" 
+        dur="5s" 
+        repeatCount="infinite" 
+        values="
+          M0,50 C150,100 350,0 500,50 L500,150 L0,150 Z;
+          M0,60 C160,90 340,10 500,40 L500,150 L0,150 Z;
+          M0,50 C150,100 350,0 500,50 L500,150 L0,150 Z" 
+      />
+    </path>
+  </svg>
